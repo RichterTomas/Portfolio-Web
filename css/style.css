@@ -7,10 +7,10 @@
 
 
 body{
-    background-color: rgb(33,33,33);
+    
     color: white;
     /* border: solid black 2px; */
-    margin: 0 140px;
+    background-color: rgb(33,33,33);
 }
 
 /* Estructura del header */
@@ -18,6 +18,7 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    margin: 0 140px;
 }
 
 nav{
@@ -38,11 +39,13 @@ nav{
 }
 
 
-/* Primer section del main */
+/*--------------- Primer section del main ---------------------*/
 
 .Inicio{
      display: flex; 
-     padding: 180px 0px
+     padding: 180px 0px;
+     margin: 0 140px;
+     
 }
 
 .perfil{
@@ -108,12 +111,13 @@ nav{
 }
 
 
-/* Pie de inicio */
+/* ------------------------Pie de inicio------------------------ */
 .redes{
     display: flex;
     justify-content: space-between;
     font-size: 20px;
     padding: 45px 0 110px 0;
+    margin: 0 140px;
 }
 
 .datos{
@@ -151,4 +155,22 @@ nav{
     border: solid black 2px;
 }
 
-/* Segunda seccion (sobre mi) */
+/* -----------------Segunda seccion (sobre mi)------------------ */
+
+.sobre_mi{
+    background-color: rgb(37,37,37);
+}
+
+.contenido{
+    /* border: solid black 2px; */
+    background-color: rgb(37,37,37);
+    display: flex; 
+    justify-content: space-between;
+    padding: 180px 0px;
+    margin: 0px 140px 
+}
+
+.contenido .titulo{
+    align-items: end;
+    text-align: end;
+}
