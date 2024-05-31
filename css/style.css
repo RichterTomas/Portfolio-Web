@@ -85,10 +85,20 @@ nav{
 .boton{
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(167,115,74);    
+    align-items: center;    
     height: 90px;
     width: 410px;
+    background:linear-gradient(to right,  rgb(167,115,74), transparent 100%);
+    transition: background-position 1s ease;
+    background-size: 300% 200%;
+    background-position: 100% 0;
+}
+
+.boton:hover{
+    background-position: 0 100%;
+    
+    
+    
 }
 
 .boton a{
