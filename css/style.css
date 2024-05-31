@@ -42,7 +42,6 @@ nav{
 
 .Inicio{
      display: flex; 
-     /* border: solid black 2px; */
      padding: 180px 0px
 }
 
@@ -55,7 +54,7 @@ nav{
 
 .titulo{
   width: 100%; 
-  /* border: solid black 2px; */
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -108,6 +107,8 @@ nav{
     width: 100px;
 }
 
+
+/* Pie de inicio */
 .redes{
     display: flex;
     justify-content: space-between;
@@ -150,4 +151,4 @@ nav{
     border: solid black 2px;
 }
 
-
+/* Segunda seccion (sobre mi) */
