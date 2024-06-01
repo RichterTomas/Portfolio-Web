@@ -211,7 +211,7 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 0px 140px ;
-    padding: 0 0 600px 0;
+    padding: 250px 0 600px 0;
 }
 .trabajos .titulo{
     border: solid white 3px;
@@ -255,6 +255,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    border-radius: 12px;
 }
 
 
@@ -263,7 +264,6 @@ nav{
     width: 290px;
     height: 600px;
     background-image: url(../img/imgperfil.png);
-
 }
 
 
@@ -307,6 +307,7 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    border-radius: 12px;
 }
 
 
