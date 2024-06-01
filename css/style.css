@@ -337,49 +337,59 @@ nav{
 
 
 
-/* ------------------ Cuarto Section (Reseñas) ---------------------------------- */
+/* ---------------------------------------- Cuarto Section (Reseñas) ---------------------------------- */
 
-.pr{
+
+
+
+.pr{ /* propiedades de las imagenes de las personas */
     height: 80px;
     width: 80px;
+    border-radius: 50px;
 }
 
-.reseñas{
+.reseñas{ /* esta caja contiene todas las reseñas para poder darle un fondo y que no afecte al margen */
     padding: 300px 0px;
     background-color: rgb(12,12,12);
+    font-family: 'Acumin Pro', Arial, Helvetica, sans-serif;
 }
-.prop_reseñas{
+
+
+.prop_reseñas{ /* esta caja la utilizo para darle propiedades y acomodar los datos de las reseñas en forma de ila */
     display: flex;
     flex-direction: row-reverse;
     background-color: rgb(12,12,12);
     margin: 0 140px;
 }
 .prop_reseñas .titulo{
-    border: solid white 3px;
     width: 450px;
     height: 400px;
     align-items: end;
 }
 
-.personas{
-    border: solid black 3px;
+
+
+
+/* este div contiene las reseñas de las personas junto con su nombre  */
+.personas{ 
     display: flex;
-    
 }
 
 
 .personas div{
-    border: solid blue 3px;
     width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-   
+    align-items: center;
 }
 
+
+
+
+/* Cajas de las reseñas de las personas, junto con los datos de las mismas */
 .personas .reseña1{
-    border: solid red 3px;
+    border-radius: 10px;
     background-color: rgb(58,58,58);
     text-align: center;
     align-items: center;
@@ -388,13 +398,14 @@ nav{
 }
 
 .personas .p1{
-    border: solid red 3px;
     width: 200px;
+    padding-bottom: 60px;
 }
 
 
+
 .personas .reseña2{
-    border: solid red 3px;
+    border-radius: 10px;
     background-color: rgb(24,24,24);
     text-align: center;
     align-items: center;
@@ -403,22 +414,22 @@ nav{
 }
 
 .personas .p2{
-    border: solid red 3px;
     width: 200px;
+    padding-top: 20px;
 }
 
 
 
 .personas .reseña3{
-    border: solid red 3px;
+    border-radius: 10px;
     background-color:rgb(58,58,58);
     text-align: center;
     align-items: center;
     width: 350px;
-    height: 300px;
+    height: 300px;   
 }
 
 .personas .p3{
-    border: solid red 3px;
     width: 200px;
+    padding-bottom: 60px;
 }
