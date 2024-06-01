@@ -205,3 +205,129 @@ nav{
 
 
 /* ------------------------- Tercer section (trabajo) ------------------------ */
+
+
+.trabajos{ 
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 140px ;
+    padding: 0 0 600px 0;
+}
+.trabajos .titulo{
+    border: solid white 3px;
+    width: 700px;
+    height: 600px;
+}
+
+
+
+
+.presentacion{ /* Esta etiqueta contiene dos columnas donde iran ubicadas las imagenes */
+    border: solid rgb(255, 255, 255) 2px;
+    background-color: rgb(105, 112, 5);
+    width: 650px;
+    height: 1250px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+    
+
+
+
+/* Primer tanda de imagenes */
+.columna1{ 
+    border: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    width: 290px;
+    align-items: center;  
+}
+
+
+.columna1 div{
+    border: solid white 3px;
+    background-color: rgb(255, 72, 0);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+
+.columna1 .img1{
+    width: 290px;
+    height: 600px;
+    background-image: url(../img/imgperfil.png);
+
+}
+
+
+
+.columna1 .img2{
+    width: 290px;
+    height: 350px;
+    background-image: url(../img/imgperfil.png);
+    
+}
+
+
+
+.columna1 .img3{
+    width: 290px;
+    height: 200px;
+    background-image: url(../img/imgperfil.png);
+    
+}
+
+
+
+
+
+/* Segunda tanda de imagenes */
+.columna2{
+    border: solid black 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 290px;
+    height: 1250px;
+    align-items: center;
+}
+
+.columna2 div{
+    border: solid white 3px;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.columna2 .img4{
+    width: 290px;
+    height: 400px;
+    background-image: url(../img/imgperfil.png);
+    
+}
+
+
+.columna2 .img5{
+    width: 290px;
+    height: 500px;
+    background-image: url(../img/imgperfil.png);
+    
+}
+
+
+.columna2 .img6{
+    width: 290px;
+    height: 300px;
+    background-image: url(../img/imgperfil.png);
+}
