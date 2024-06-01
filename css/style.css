@@ -36,7 +36,7 @@
 
 .logo{
     width: 100px;
-    
+
 }
 /* --------------- Cuerpo de la pagina --------------- */
 
@@ -216,7 +216,7 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 0px 140px ;
-    padding: 250px 0 600px 0;
+    padding: 250px 0 400px 0;
 }
 .trabajos .titulo{
     /* border: solid white 3px; */
@@ -338,3 +338,87 @@ nav{
 
 
 /* ------------------ Cuarto Section (Reseñas) ---------------------------------- */
+
+.pr{
+    height: 80px;
+    width: 80px;
+}
+
+.reseñas{
+    padding: 300px 0px;
+    background-color: rgb(12,12,12);
+}
+.prop_reseñas{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: rgb(12,12,12);
+    margin: 0 140px;
+}
+.prop_reseñas .titulo{
+    border: solid white 3px;
+    width: 450px;
+    height: 400px;
+    align-items: end;
+}
+
+.personas{
+    border: solid black 3px;
+    display: flex;
+    
+}
+
+
+.personas div{
+    border: solid blue 3px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+   
+}
+
+.personas .reseña1{
+    border: solid red 3px;
+    background-color: rgb(58,58,58);
+    text-align: center;
+    align-items: center;
+    width: 350px;
+    height: 300px;
+}
+
+.personas .p1{
+    border: solid red 3px;
+    width: 200px;
+}
+
+
+.personas .reseña2{
+    border: solid red 3px;
+    background-color: rgb(24,24,24);
+    text-align: center;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+}
+
+.personas .p2{
+    border: solid red 3px;
+    width: 200px;
+}
+
+
+
+.personas .reseña3{
+    border: solid red 3px;
+    background-color:rgb(58,58,58);
+    text-align: center;
+    align-items: center;
+    width: 350px;
+    height: 300px;
+}
+
+.personas .p3{
+    border: solid red 3px;
+    width: 200px;
+}
