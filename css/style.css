@@ -463,3 +463,50 @@ nav{
     height: 20px;
     filter: grayscale(100%) brightness(200%) contrast(200%);
 }
+
+
+
+
+/* ---------------------------- Sexta seccion (mis servicios) --------------------------  */
+.servicios{
+    margin: 0 140px;
+}
+
+.servicios .titulo{
+    padding-bottom: 200px;
+    
+}
+
+.servicios section {
+    display: flex;
+    justify-content: space-between;
+    border: solid black 3px;
+
+    
+}
+
+
+/* acomodo el contenido que acompaña a las fotos */
+.subtitulos{
+    flex-direction: column;
+    justify-content: center;
+    border: solid red 2px;
+    width: 500px; 
+    display: flex;
+    
+}
+
+.sv2 .subtitulos {
+    align-items: end;
+    text-align: end;
+}
+
+.servicios .boton{
+    margin-top: 45px;
+}
+
+.servicios h1{
+    padding-bottom: 30px;
+    
+}
+
