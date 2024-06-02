@@ -346,6 +346,11 @@ nav{
     height: 80px;
     width: 80px;
     border-radius: 50px;
+    filter: grayscale(100%) brightness(120%);
+}
+
+.p2 .pr{
+        filter: grayscale(100%) brightness(170%);
 }
 
 .reseñas{ /* esta caja contiene todas las reseñas para poder darle un fondo y que no afecte al margen */
@@ -399,7 +404,7 @@ nav{
 
 .personas .p1{
     width: 200px;
-    padding-bottom: 60px;
+    padding-bottom: 90px;
 }
 
 
@@ -431,5 +436,30 @@ nav{
 
 .personas .p3{
     width: 200px;
-    padding-bottom: 60px;
+    padding-bottom: 90px;
+}
+
+
+/* Puntos para simular el carrousel */
+.puntos{
+    margin: 0 140px;
+    width: 1127px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.puntos .pr1{
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%) brightness(30%);
+    padding-right: 30px;
+}
+
+.puntos .pr2{
+    width: 20px;
+    height: 20px;
+    filter: grayscale(100%) brightness(200%) contrast(200%);
 }
