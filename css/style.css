@@ -16,19 +16,41 @@
 }
 
 
+
+
+/* ---------------------------------- EFECTOS GENERALES ------------------------------ */
 .logo, .marca{
     width: 50px;
     height: 50px;
     filter: grayscale(300%) brightness(600%);
 
 }
+
+p,a{
+    font-family: 'Helvetica neue',Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+}
+
+h1{
+    font-family: 'Acumin Pro',Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+h2{
+    font-family: 'Helvetica neue',Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+
 /* --------------- Cuerpo de la pagina --------------- */
 
 body{
     color: white;
     background-color: rgb(33,33,33);
-    font-family: "Acumin Pro", "Helvetica neue", Arial, Helvetica, sans-serif;
-    font-weight: normal;
+    font-family: "Acumin Pro", Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
 }
 
 /* ------------------------- Estructura del header ------------------------------ */
@@ -46,6 +68,9 @@ header div{
     margin: 0 140px;
 }
 
+header p{
+    font-size: 25px;
+}
 
 nav{
     display: flex;
@@ -91,43 +116,33 @@ nav{
 }
 
 .titulo h1{
-    font-family: 'Acumin Pro', Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-style: bold;
-    font-size: 60px;
     padding: 30px 0px 55px 0px;
 }
 
 .titulo h2{
-    font-family: "Helvetica neue",  Arial, Helvetica, sans-serif;
-    font-weight: lighter;
     font-size: 55px;
-    padding: 110px 0px 0px 0px;
-    
 }
 
 .titulo p{
-    font-size: 20px;
     width: 910px;
     padding: 0px 0px 50px 0px;
 }
 
-header p{
-    font-family: "Acumin Pro", Arial, Helvetica, sans-serif;
-    font-size: 25px;
-}
-
 
 .boton{
+    font-family: "Helvetica neue",  Arial, Helvetica, sans-serif;
+    letter-spacing:4px;
     display: flex;
     justify-content: center;
     align-items: center;    
     height: 90px;
     width: 410px;
+    
+    /* efecto */
     background:linear-gradient(to right,  rgb(167,115,74), transparent 100%);
     transition: background-position 1s ease;
-    background-size: 300% 200%;
-    background-position: 100% 0;
+    background-size: 200% 100%;
+    background-position: 200% 100%;
 }
 
 .boton:hover{
@@ -220,7 +235,6 @@ header p{
     padding: 250px 0 400px 0;
 }
 .trabajos .titulo{
-    /* border: solid white 3px; */
     width: 700px;
     height: 600px;
 }
@@ -229,7 +243,6 @@ header p{
 
 
 .presentacion{ /* Esta etiqueta contiene dos columnas donde iran ubicadas las imagenes */
-    /* border: solid rgb(255, 255, 255) 2px; */
     width: 650px;
     height: 1250px;
     display: flex;
@@ -294,7 +307,6 @@ header p{
 
 /* Segunda tanda de imagenes */
 .columna2{
-    /* border: solid black 2px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -304,7 +316,6 @@ header p{
 }
 
 .columna2 div{
-    /* border: solid white 3px; */
     width: 100px;
     height: 100px;
     display: flex;
@@ -357,7 +368,6 @@ header p{
 .reseñas{ /* esta caja contiene todas las reseñas para poder darle un fondo y que no afecte al margen */
     padding: 300px 0px;
     background-color: rgb(12,12,12);
-    font-family: 'Acumin Pro', Arial, Helvetica, sans-serif;
 }
 
 
@@ -532,10 +542,6 @@ header p{
     font-size: 33px;
 }
 
-.subtitulos p{
-    font-size: 20px;
-}
-
 /* ----------------------------Septima seccion---------------------------------- */
 
 .pie_main{
@@ -553,8 +559,13 @@ header p{
 }
 
 .pie_main p{
-    padding: 20px 0px;
     font-size: 30px;
+    padding: 30px 0px;
+}
+
+.pie_main h1{
+    font-size: 40px;
+    padding: 10px 0px;
 }
 
 .pie_main .logo{
@@ -564,15 +575,13 @@ header p{
 }
 
 
-.pie_main h1{
-    font-size: 50px;
-    font-weight: lighter;
-}
+
 
 
 /* ----------------------- PIE DE PAGINA ---------------------------------- */
 
 footer{
+    padding-top: 60px;
     margin: 0 140px;
     display: flex;
     justify-content: space-between;
@@ -582,22 +591,29 @@ footer{
     width: 500px;
 }
 
-.descripcion p{
-    padding-top: 70px;
-
+.descripcion img{
+    padding: 40px 0;
 }
+
 
 .contacto{
     text-align: end;
 }
 .contacto h1{
-    padding-bottom: 60px;
+    padding: 30px 0;
     font-size: 50px;
+    font-weight: lighter;
 }
 
 .contacto p{
-    padding: 10px;
     font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.contacto span{
+    font-family: 'Acumin pro',Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .contacto img{
@@ -611,4 +627,11 @@ footer{
 .linea{
     filter: grayscale(30%) brightness(50%);
     padding-left: 80px;
+}
+
+footer .barra{
+    font-size: 210px;
+    padding-left: 150px;
+    font-family: 'Helvetica neue',Arial, Helvetica, sans-serif;
+    font-weight: lighter;
 }
