@@ -6,36 +6,19 @@
 
 /* ---------- Fuentes que se van a utilizar ------------------ */
 @font-face {
-    font-family: 'Acumin Pro';
-    src: url(/fonts/Acumin-RPro.otf);
-    font-weight: normal;
-    font-style: normal;
+    font-family: "Helvetica neue";
+    src: url(../fonts/HelveticaNeueUltraLight.ttf);
 }
 
 @font-face {
     font-family: 'Acumin Pro';
-    src: url(/fonts/Acumin-RPro.otf);
-    font-weight: bold;
-    font-style: bold;
-}
-
-@font-face {
-    font-family: 'Helvetica neue';
-    src: url(/fonts/HelveticaNeueMedium.otf);
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Helvetica neue';
-    src: url(/fonts/HelveticaNeueUltraLight.otf);
-    font-weight: lighter;
-    font-style: lighter;
+    src: url(../fonts/Acumin-RPro.ttf);
 }
 
 
-.logo{
-    width: 100px;
+.logo, .marca{
+    width: 50px;
+    height: 50px;
     filter: grayscale(300%) brightness(600%);
 
 }
@@ -44,17 +27,25 @@
 body{
     color: white;
     background-color: rgb(33,33,33);
-    font-family: 'Acumin Pro', 'Helvetica neue', Arial, Helvetica, sans-serif;
+    font-family: "Acumin Pro", "Helvetica neue", Arial, Helvetica, sans-serif;
     font-weight: normal;
 }
 
 /* ------------------------- Estructura del header ------------------------------ */
 header{
+    background-color: rgb(33,33,33);
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+
+header div{
     display: flex;
     justify-content: space-between;
     padding: 20px;
     margin: 0 140px;
 }
+
 
 nav{
     display: flex;
@@ -65,11 +56,14 @@ nav{
     text-decoration: none;
     padding: 15px;
     font-size: 30px;
+    border-bottom: solid 0px;
+    transition: .2s;
 }
 
-.logo{
-    width: 50px;
-    height: 50px;
+.navs:hover{
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
@@ -105,10 +99,9 @@ nav{
 }
 
 .titulo h2{
-    font-family: 'Helvetica neue', Arial, Helvetica, sans-serif;
+    font-family: "Helvetica neue",  Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    font-style: lighter;
-    font-size: 60px;
+    font-size: 55px;
     padding: 110px 0px 0px 0px;
     
 }
@@ -118,6 +111,12 @@ nav{
     width: 910px;
     padding: 0px 0px 50px 0px;
 }
+
+header p{
+    font-family: "Acumin Pro", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
 
 .boton{
     display: flex;
@@ -490,12 +489,6 @@ nav{
     justify-content: space-between;
 }
 
-.servicios .logo{
-    height: 200px;
-    width: 100px;
-    image-resolution: 50px;
-    
-}
 
 .servicios .titulo p{
     font-size: 60px ;
