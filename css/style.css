@@ -480,9 +480,14 @@ nav{
 .servicios section {
     display: flex;
     justify-content: space-between;
-    border: solid black 3px;
+    padding-bottom: 120px;
 
-    
+}
+
+.servicios .perfil{
+    width: 500px;
+    height: 450px;
+    border-radius: 15px;
 }
 
 
@@ -490,10 +495,8 @@ nav{
 .subtitulos{
     flex-direction: column;
     justify-content: center;
-    border: solid red 2px;
     width: 500px; 
     display: flex;
-    
 }
 
 .sv2 .subtitulos {
@@ -505,8 +508,13 @@ nav{
     margin-top: 45px;
 }
 
-.servicios h1{
+.subtitulos h1{
     padding-bottom: 30px;
-    
+    font-style: bold;
+    font-size: 33px;
+}
+
+.subtitulos p{
+    font-size: 20px;
 }
 
