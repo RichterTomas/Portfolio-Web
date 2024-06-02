@@ -575,3 +575,47 @@ nav{
     font-size: 50px;
     font-weight: lighter;
 }
+
+
+/* ----------------------- PIE DE PAGINA ---------------------------------- */
+
+footer{
+    margin: 0 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.descripcion{
+    width: 500px;
+}
+
+.descripcion p{
+    padding-top: 70px;
+
+}
+
+.contacto{
+    text-align: end;
+}
+.contacto h1{
+    padding-bottom: 60px;
+    font-size: 50px;
+}
+
+.contacto p{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.contacto img{
+    padding: 0px 10px;
+}
+
+.contacto .logo{
+    width: 30px;
+}
+
+.linea{
+    filter: grayscale(30%) brightness(50%);
+    padding-left: 80px;
+}
