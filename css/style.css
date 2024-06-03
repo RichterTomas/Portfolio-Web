@@ -43,6 +43,16 @@ h2{
     letter-spacing: 1px;
 }
 
+
+.red{
+    transition: 0.2s;
+}
+.red:hover{
+    padding: 0px 10px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 .boton_der{ 
     /* boton con efecto hacia derecha */
     font-family: "Helvetica neue",  Arial, Helvetica, sans-serif;
@@ -129,6 +139,7 @@ body{
 
 /* ------------------------- Estructura del header ------------------------------ */
 header{
+    padding-top: 10px;
     background-color: rgb(33,33,33);
     position: fixed;
     width: 100%;
