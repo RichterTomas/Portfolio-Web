@@ -11,10 +11,9 @@
 }
 
 @font-face {
-    font-family: 'Acumin Pro';
-    src: url(../fonts/Acumin-RPro.ttf);
+    font-family: "Helvetica neue"-l;
+    src: url(../fonts/HelveticaNeueLight.ttf);
 }
-
 
 
 
@@ -310,26 +309,49 @@ nav{
 
 
 
-/* Primer tanda de imagenes */
+/* Efectos generales */
 .columna1{ 
-    /* border: solid black 2px; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-content: space-between;
     width: 290px;
-    align-items: center;  
 }
 
+.columna2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-.columna1 div{
-    /* border: solid white 3px; */
+.presentacion .img1,.img2,.img3,.img4,.img5,.img6{
     width: 100px;
     height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     border-radius: 12px;
+}
+
+.img1 div,.img2 div,.img3 div, .img4 div, .img5 div, .img6 div{
+    display: flex;
+    margin-top: 10px;
+}
+
+
+
+.presentacion p,h3{
+    margin-left: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: start;
+}
+.presentacion h3{
+    margin-top: 4px;
+}
+.presentacion .logo{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -338,72 +360,82 @@ nav{
     width: 290px;
     height: 600px;
     background-image: url(../img/imgperfil.png);
+    transition: .5s;
 }
 
+.img1:hover{
+    width: 310px;
+    height: 620px;
+}
 
 
 .columna1 .img2{
     width: 290px;
     height: 350px;
     background-image: url(../img/imgperfil.png);
-    
+    transition: .5s;
 }
 
-
+.img2:hover{
+    width: 310px;
+    height: 370px;
+}
 
 .columna1 .img3{
     width: 290px;
     height: 200px;
     background-image: url(../img/imgperfil.png);
-    
+    transition: .5s;
 }
 
-
+.img3:hover{
+    width: 310px;
+    height: 220px;
+}
 
 
 
 /* Segunda tanda de imagenes */
-.columna2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 290px;
-    height: 1250px;
-    align-items: center;
-}
-
-.columna2 div{
-    width: 100px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    border-radius: 12px;
-}
-
 
 .columna2 .img4{
     width: 290px;
     height: 400px;
     background-image: url(../img/imgperfil.png);
-    
+    transition: .5s;
 }
+
+.img4:hover{
+    width: 310px;
+    height: 400px;
+}
+
 
 
 .columna2 .img5{
     width: 290px;
     height: 500px;
     background-image: url(../img/imgperfil.png);
-    
+    transition: .5s;
 }
+
+.img5:hover{
+    width: 310px;
+    height: 520px;
+}
+
 
 
 .columna2 .img6{
     width: 290px;
     height: 300px;
     background-image: url(../img/imgperfil.png);
+    transition: .5s;
 }
 
+.img6:hover{
+    width: 310px;
+    height: 320px;
+}
 
 
 /* ---------------------------------------- Cuarto Section (Reseñas) ---------------------------------- */
