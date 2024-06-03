@@ -43,6 +43,80 @@ h2{
     letter-spacing: 1px;
 }
 
+.boton_der{ 
+    /* boton con efecto hacia derecha */
+    font-family: "Helvetica neue",  Arial, Helvetica, sans-serif;
+    letter-spacing:4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 90px;
+    width: 410px;
+    
+    /* efecto */
+    background:linear-gradient(to left,  rgb(167,115,74), transparent 75%);
+    transition: background-position 1s ease;
+    background-size: 200% 100%;
+    background-position: 150% 50%;
+}
+
+.boton_der:hover{
+    background-position: 100% 200%;
+}
+
+.boton_der a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.boton_der img{
+    width: 100px;
+}
+
+
+
+
+.boton{
+    /* boton con efecto hacia izquierda */
+    font-family: "Helvetica neue",  Arial, Helvetica, sans-serif;
+    letter-spacing:4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 90px;
+    width: 410px;
+    
+    /* efecto */
+    background:linear-gradient(to right,  rgb(167,115,74), transparent 75%);
+    transition: background-position 1s ease;
+    background-size: 200% 100%;
+    background-position: 150% 100%;
+}
+
+.boton:hover{
+    background-position: 200% 100%;
+}
+
+.boton a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.boton img{
+    width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* --------------- Cuerpo de la pagina --------------- */
 
@@ -129,35 +203,7 @@ nav{
 }
 
 
-.boton{
-    font-family: "Helvetica neue",  Arial, Helvetica, sans-serif;
-    letter-spacing:4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    height: 90px;
-    width: 410px;
-    
-    /* efecto */
-    background:linear-gradient(to right,  rgb(167,115,74), transparent 100%);
-    transition: background-position 1s ease;
-    background-size: 200% 100%;
-    background-position: 200% 100%;
-}
 
-.boton:hover{
-    background-position: 0 100%;
-}
-
-.boton a{
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-}
-
-.boton img{
-    width: 100px;
-}
 
 
 /* ------------------------Pie de inicio------------------------ */
@@ -470,13 +516,13 @@ nav{
     width: 20px;
     height: 20px;
     filter: grayscale(100%) brightness(30%);
-    padding-right: 30px;
 }
 
 .puntos .pr2{
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     filter: grayscale(100%) brightness(200%) contrast(200%);
+    padding: 0px 30px
 }
 
 
@@ -532,7 +578,7 @@ nav{
     text-align: end;
 }
 
-.servicios .boton{
+.servicios .boton_der, .boton{
     margin-top: 45px;
 }
 
