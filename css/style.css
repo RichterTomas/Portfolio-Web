@@ -22,9 +22,11 @@
 
 }
 
-p,a{
+body p,a{
     font-family: 'Helvetica neue',Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
+    font-weight: 590;
+    font-size: 20px;
 }
 
 h1{
@@ -147,7 +149,7 @@ header div{
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    margin: 0 140px;
+    margin: 0 208px;
 }
 
 header p{
@@ -178,8 +180,8 @@ nav{
 
 .inicio{
      display: flex; 
-     padding: 180px 0px;
-     margin: 0 140px;
+     padding: 190px 0px 227px 0px;
+     margin: 0 208px;
      
 }
 
@@ -207,7 +209,7 @@ nav{
 
 .titulo p{
     width: 910px;
-    padding: 0px 0px 50px 0px;
+    padding-bottom: 50px;
 }
 
 .redes h3{
@@ -226,7 +228,7 @@ nav{
     justify-content: space-between;
     font-size: 20px;
     padding: 45px 0 110px 0;
-    margin: 0 140px;
+    margin: 0 208px;
 }
 
 .datos{
@@ -268,7 +270,7 @@ nav{
     display: flex; 
     justify-content: space-between;
     padding: 180px 0px;
-    margin: 0px 140px 
+    margin: 0px 208px 
 }
 
 .contenido .titulo{
@@ -283,7 +285,7 @@ nav{
 .trabajos{ 
     display: flex;
     justify-content: space-between;
-    margin: 0px 140px ;
+    margin: 0px 208px ;
     padding: 250px 0 400px 0;
 }
 .trabajos .titulo{
@@ -460,7 +462,7 @@ nav{
     display: flex;
     flex-direction: row-reverse;
     background-color: rgb(12,12,12);
-    margin: 0 140px;
+    margin: 0 208px;
 }
 .prop_reseñas .titulo{
     width: 450px;
@@ -474,6 +476,7 @@ nav{
 /* este div contiene las reseñas de las personas junto con su nombre  */
 .personas{ 
     display: flex;
+    margin: 0 208px;
 }
 
 
@@ -542,7 +545,7 @@ nav{
 
 /* Puntos para simular el carrousel */
 .puntos{
-    margin: 0 145px;
+    margin:  0px 140px;
     width: 1127px;
     height: 150px;
     display: flex;
@@ -569,7 +572,7 @@ nav{
 
 /* ---------------------------- Sexta seccion (mis servicios) --------------------------  */
 .servicios{
-    margin: 0 140px;
+    margin: 0 208px;
     padding-top: 150px;
 }
 
@@ -635,7 +638,7 @@ nav{
 }
 
 .pie_main div{
-    margin: 0 140px;
+    margin: 0 208px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -665,11 +668,11 @@ nav{
 footer{
     background-color: rgb(12,12,12);
     border-top: solid rgb(0, 0, 0, 50%) 5px;
-    
     padding-bottom: 50px;
 }
+
 .contenido_footer{
-    margin: 150px 140px;
+    margin: 150px 208px;
     display: flex;
     justify-content: space-between;
     background-color: rgb(12,12,12);
@@ -686,8 +689,9 @@ footer{
     font-size: 20px;
 }
 .descripcion img{
-    padding: 40px 0;
+    padding: 30px 0;
 }
+
 
 
 .contacto{
