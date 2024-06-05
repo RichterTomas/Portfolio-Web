@@ -9,13 +9,10 @@
     font-family: "Helvetica neue";
     src: url(../fonts/HelveticaNeueUltraLight.ttf);
 }
-
 @font-face {
-    font-family: "Helvetica neue"-l;
-    src: url(../fonts/HelveticaNeueLight.ttf);
+    font-family: 'Acumin pro';
+    src: url(../fonts/Acumin-RPro.ttf);
 }
-
-
 
 /* ---------------------------------- EFECTOS GENERALES ------------------------------ */
 .logo, .marca{
@@ -41,6 +38,7 @@ h2{
     font-weight: lighter;
     letter-spacing: 1px;
 }
+
 
 
 .red{
@@ -212,6 +210,12 @@ nav{
     padding: 0px 0px 50px 0px;
 }
 
+.redes h3{
+    font-size: 23px;
+    font-weight: lighter;
+    font-family: 'Acumin pro',Arial, Helvetica, sans-serif;
+}
+
 
 
 
@@ -252,14 +256,6 @@ nav{
     padding:0 0 30px 0;
 }
 
-
-
-.redes img{
-    width: 100px;
-    padding: 0;
-    height: 100px;
-    width: 100px;
-}
 
 /* ----------------------------- Segunda seccion (sobre mi) ---------------------- */
 
@@ -653,14 +649,12 @@ nav{
 }
 
 .pie_main h1{
-    font-size: 40px;
+    font-size: 55px;
     padding: 10px 0px;
 }
 
 .pie_main .logo{
     padding-bottom: 20px;
-    width: 100px;
-    height: 100px;
 }
 
 
@@ -668,18 +662,29 @@ nav{
 
 
 /* ----------------------- PIE DE PAGINA ---------------------------------- */
-
 footer{
-    padding-top: 60px;
-    margin: 0 140px;
+    background-color: rgb(12,12,12);
+    border-top: solid rgb(0, 0, 0, 50%) 5px;
+    
+    padding-bottom: 50px;
+}
+.contenido_footer{
+    margin: 150px 140px;
     display: flex;
     justify-content: space-between;
+    background-color: rgb(12,12,12);
 }
 
 .descripcion{
-    width: 500px;
+    width: 800px;
 }
 
+
+.descripcion p{
+    font-family: 'Acumin pro', Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
 .descripcion img{
     padding: 40px 0;
 }
@@ -688,6 +693,8 @@ footer{
 .contacto{
     text-align: end;
 }
+
+
 .contacto h1{
     padding: 30px 0;
     font-size: 50px;
@@ -713,14 +720,9 @@ footer{
     width: 30px;
 }
 
-.linea{
-    filter: grayscale(30%) brightness(50%);
-    padding-left: 80px;
-}
 
 footer .barra{
     font-size: 210px;
-    padding-left: 150px;
     font-family: 'Helvetica neue',Arial, Helvetica, sans-serif;
     font-weight: lighter;
 }
