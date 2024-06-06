@@ -42,6 +42,11 @@ h2{
 }
 
 
+.contacto span{
+    font-family: 'Acumin pro',Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 
 .red{
     transition: 0.2s;
@@ -158,6 +163,7 @@ header p{
 
 nav{
     display: flex;
+    height: 30px;
 }
 
 .navs{
@@ -165,18 +171,35 @@ nav{
     text-decoration: none;
     padding: 15px;
     font-size: 30px;
-    border-bottom: solid 0px;
-    transition: .2s;
-}
-
-.navs:hover{
-    padding: 10px;
-    font-weight: bold;
-    text-decoration: underline;
+    position: relative; 
 }
 
 
-/*---------------------------- Primer section del main ---------------------*/
+.navs::after {
+    content: ''; 
+    position: absolute;
+    width: 10px; 
+    height: 10px; 
+    background-color: transparent; 
+    border-radius: 50%; 
+    bottom: -30px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    transition: width 0.2s, height 0.2s, background-color 0.2s; 
+}
+
+.navs:hover::after{
+    width: 10px; 
+    height: 10px; 
+    background-color: white; 
+    border: 1px solid white; 
+}
+
+.navs p:hover{
+    font-weight: bolder;
+}
+
+/* ---------- Primer section del main ---------------------*/ 
 
 .inicio{
      display: flex; 
@@ -453,7 +476,7 @@ nav{
 }
 
 .reseñas{ /* esta caja contiene todas las reseñas para poder darle un fondo y que no afecte al margen */
-    padding: 300px 0px;
+    padding: 250px 0px 100px 0px;
     background-color: rgb(12,12,12);
 }
 
@@ -468,7 +491,9 @@ nav{
     width: 450px;
     height: 400px;
     align-items: end;
+    text-align: end;
 }
+
 
 
 
@@ -710,11 +735,6 @@ footer{
     font-size: 20px;
     font-weight: bold;
     padding: 10px 0;
-}
-
-.contacto span{
-    font-family: 'Acumin pro',Arial, Helvetica, sans-serif;
-    font-weight: bold;
 }
 
 .contacto img{
