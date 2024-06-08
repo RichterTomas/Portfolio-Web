@@ -15,24 +15,41 @@
 }
 
 /* ---------------------------------- EFECTOS GENERALES ------------------------------ */
-.logo, .marca{
+
+:root{
+    --margen: 0px 208px;
+    --backgroundGral: rgb(33,33,33);
+    --backgroundClaro: rgb(37,37,37);
+    --backgroundOscuro: rgb(12,12,12);
+
+    --tamañoLetraBoton: 25px ;
+    --colorBoton: rgb(167,115,74) ;
+
+    --tamañoTitulo: 60px;
+    --tamañoSubtitulo: 33px;
+    --descripcion: 20px;
+    --espacioLetra: 2px;
+}
+
+.logo{
     width: 50px;
     height: 50px;
     filter: grayscale(300%) brightness(600%);
-
 }
 
-body p,a{
+
+/* Diferenciacion de letras por etiqueta */
+p,a{
     font-family: 'Helvetica neue',Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: var(--espacioLetra);
     font-weight: 590;
-    font-size: 20px;
+    font-size: var(--descripcion);
 }
 
 h1{
     font-family: 'Acumin Pro',Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 60px;
+    font-size: var(--tamañoTitulo);
 }
 
 h2{
@@ -48,6 +65,9 @@ h2{
 }
 
 
+
+
+/* Efectos botones */
 .red{
     transition: 0.2s;
 }
@@ -68,7 +88,7 @@ h2{
     width: 410px;
     
     /* efecto */
-    background:linear-gradient(to left,  rgb(167,115,74), transparent 75%);
+    background:linear-gradient(to left,  var(--colorBoton), transparent 75%);
     transition: background-position 1s ease;
     background-size: 200% 100%;
     background-position: 150% 50%;
@@ -81,7 +101,7 @@ h2{
 .boton_der a{
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: var(--tamañoLetraBoton);
 }
 
 .boton_der img{
@@ -102,7 +122,7 @@ h2{
     width: 410px;
     
     /* efecto */
-    background:linear-gradient(to right,  rgb(167,115,74), transparent 75%);
+    background:linear-gradient(to right, var(--colorBoton), transparent 75%);
     transition: background-position 1s ease;
     background-size: 200% 100%;
     background-position: 150% 100%;
@@ -115,7 +135,7 @@ h2{
 .boton a{
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: var(--tamañoLetraBoton);
 }
 
 .boton img{
@@ -136,15 +156,14 @@ h2{
 
 body{
     color: white;
-    background-color: rgb(33,33,33);
-    font-family: "Acumin Pro", Arial, Helvetica, sans-serif;
-    letter-spacing: 2px;
+    background-color: var(--backgroundGral);
+    letter-spacing: var(--espacioLetra);
 }
 
 /* ------------------------- Estructura del header ------------------------------ */
 header{
     padding-top: 10px;
-    background-color: rgb(33,33,33);
+    background-color: var(--backgroundGral);
     position: fixed;
     width: 100%;
     z-index: 10000;
@@ -154,7 +173,7 @@ header div{
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    margin: 0 208px;
+    margin: var(--margen);
 }
 
 header p{
@@ -170,7 +189,6 @@ nav{
     color: white;
     text-decoration: none;
     padding: 15px;
-    font-size: 30px;
     position: relative; 
 }
 
@@ -199,12 +217,14 @@ nav{
     font-weight: bolder;
 }
 
+
+
 /* ---------- Primer section del main ---------------------*/ 
 
 .inicio{
      display: flex; 
      padding: 190px 0px 227px 0px;
-     margin: 0 208px;
+     margin: var(--margen);
      
 }
 
@@ -251,7 +271,7 @@ nav{
     justify-content: space-between;
     font-size: 20px;
     padding: 45px 0 110px 0;
-    margin: 0 208px;
+    margin: var(--margen);
 }
 
 .datos{
@@ -282,24 +302,32 @@ nav{
 }
 
 
+
+
+
+
 /* ----------------------------- Segunda seccion (sobre mi) ---------------------- */
 
 .sobre_mi{
-    background-color: rgb(37,37,37);
+    background-color: var(--backgroundClaro);
 }
 
 .contenido{
-    background-color: rgb(37,37,37);
+    background-color: var(--backgroundClaro);
     display: flex; 
     justify-content: space-between;
     padding: 180px 0px;
-    margin: 0px 208px 
+    margin: var(--margen);
 }
 
 .contenido .titulo{
     align-items: end;
     text-align: end;
 }
+
+
+
+
 
 
 /* ------------------------- Tercer section (trabajo) ------------------------ */
@@ -459,10 +487,11 @@ nav{
 }
 
 
+
+
+
+
 /* ---------------------------------------- Cuarto Section (Reseñas) ---------------------------------- */
-
-
-
 
 .pr{ /* propiedades de las imagenes de las personas */
     height: 75px;
@@ -477,15 +506,15 @@ nav{
 
 .reseñas{ /* esta caja contiene todas las reseñas para poder darle un fondo y que no afecte al margen */
     padding: 250px 0px 100px 0px;
-    background-color: rgb(12,12,12);
+    background-color: var(--backgroundOscuro);
 }
 
 
 .prop_reseñas{ /* esta caja la utilizo para darle propiedades y acomodar los datos de las reseñas en forma de ila */
     display: flex;
     flex-direction: row-reverse;
-    background-color: rgb(12,12,12);
-    margin: 0 208px;
+    background-color: var(--backgroundOscuro);
+    margin: var(--margen);
 }
 .prop_reseñas .titulo{
     width: 450px;
@@ -501,7 +530,7 @@ nav{
 /* este div contiene las reseñas de las personas junto con su nombre  */
 .personas{ 
     display: flex;
-    margin: 0 208px;
+    margin:var(--margen);
 }
 
 
@@ -595,9 +624,11 @@ nav{
 
 
 
+
+
 /* ---------------------------- Sexta seccion (mis servicios) --------------------------  */
 .servicios{
-    margin: 0 208px;
+    margin: var(--margen);
     padding-top: 150px;
 }
 
@@ -614,7 +645,7 @@ nav{
 
 
 .servicios .titulo p{
-    font-size: 60px ;
+    font-size: var(--descripcion) ;
     padding-bottom: 8px;
 }
 
@@ -653,8 +684,13 @@ nav{
 .subtitulos h1{
     padding-bottom: 30px;
     font-style: bold;
-    font-size: 33px;
+    font-size: var(--tamañoSubtitulo);
 }
+
+
+
+
+
 
 /* ----------------------------Septima seccion---------------------------------- */
 
@@ -664,7 +700,7 @@ nav{
 }
 
 .pie_main div{
-    margin: 0 208px;
+    margin: var(--margen);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -692,16 +728,18 @@ nav{
 
 /* ----------------------- PIE DE PAGINA ---------------------------------- */
 footer{
-    background-color: rgb(12,12,12);
+    background-color: var(--backgroundOscuro);
     border-top: solid rgb(0, 0, 0, 50%) 5px;
     padding-bottom: 50px;
 }
 
 .contenido_footer{
-    margin: 150px 208px;
+    margin: var(--margen);
+    margin-top: 110px;
+    margin-bottom: 110px;
     display: flex;
     justify-content: space-between;
-    background-color: rgb(12,12,12);
+    background-color: var(--backgroundOscuro);
 }
 
 .descripcion{
@@ -712,7 +750,7 @@ footer{
 .descripcion p{
     font-family: 'Acumin pro', Arial, Helvetica, sans-serif;
     letter-spacing: 1px;
-    font-size: 20px;
+    font-size: var(--descripcion);
 }
 .descripcion img{
     padding: 30px 0;
@@ -732,7 +770,7 @@ footer{
 }
 
 .contacto p{
-    font-size: 20px;
+    font-size: var(--descripcion);
     font-weight: bold;
     padding: 10px 0;
 }
