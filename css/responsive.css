@@ -6,11 +6,72 @@
 @media (max-width: 768px){}
 
 /* tablets, modo retrato y moviles mas grandes */
-@media (max-width: 1024px){}
+@media (max-width: 1024px){
+    *{
+        margin: 0px;
+        
+    }
+
+    header{
+        width: 100vw;
+    }
+    .inicio{
+        img{
+            display: none;
+        }
+    }
+    .redes{
+        img{display: none;
+        }
+    }
+
+    .redes .datos{
+        flex-direction: column;
+        align-content: space-evenly;
+        a,p{
+            font-size: 10px;
+            padding-bottom:30px;
+        }
+        h3{
+            width: 30%;
+        }
+    }
+
+    .reseñas, .personas{
+    }
+
+    .contenido{
+        img{
+            display: none;
+        }
+    }
+
+    .trabajos{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sv1, .sv2, .sv3{
+        flex-direction: column;
+        img{display: none;}
+    }   
+
+    .contenido_footer{
+        img{
+            display:none;
+        }
+        p{
+            padding-top: 50px;
+        }
+    }
+}
 
 /* modo paisaje */
 @media (max-width: 1280px){
     /* NAVEGADOR */
+    *{
+        margin: 0px;
+    }
     nav{
         .navs{
             display: none;
@@ -87,16 +148,23 @@
 
 /* computadoras o tablets */
 @media (max-width: 1440px){
+    *{
+        margin: 0px;
+    }
+    body,html{
+        width: 100vw;
+    }
     .inicio{
         justify-content: space-between;
     }
     .titulo{
-        width: 50%;
+        width: 100vw;
         p{
             width: 100%;
+            font-size: 15px;
         }
         h1,h2{
-            font-size: 40px
+            font-size: 30px
         }
     }
 
