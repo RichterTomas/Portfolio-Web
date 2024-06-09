@@ -96,6 +96,7 @@ h2{
 
 .boton_der:hover{
     background-position: 100% 200%;
+    cursor: pointer;
 }
 
 .boton_der a{
@@ -130,6 +131,7 @@ h2{
 
 .boton:hover{
     background-position: 200% 100%;
+    cursor: pointer;
 }
 
 .boton a{
@@ -156,14 +158,14 @@ h2{
 
 body{
     color: white;
-    background-color: var(--backgroundGral);
+    background: var(--backgroundGral);
     letter-spacing: var(--espacioLetra);
 }
 
 /* ------------------------- Estructura del header ------------------------------ */
 header{
     padding-top: 10px;
-    background-color: var(--backgroundGral);
+    background: var(--backgroundGral);
     position: fixed;
     width: 100%;
     z-index: 10000;
@@ -198,7 +200,7 @@ nav{
     position: absolute;
     width: 10px; 
     height: 10px; 
-    background-color: transparent; 
+    background: transparent; 
     border-radius: 50%; 
     bottom: -30px; 
     left: 50%; 
@@ -209,7 +211,7 @@ nav{
 .navs:hover::after{
     width: 10px; 
     height: 10px; 
-    background-color: white; 
+    background: white; 
     border: 1px solid white; 
 }
 
@@ -274,6 +276,12 @@ nav{
     margin: var(--margen);
 }
 
+.redes h3{
+    margin: 0px 0px 0px -3px;
+    padding:0 0 30px 0;
+}
+
+
 .datos{
     display: flex;
 }
@@ -297,9 +305,6 @@ nav{
     text-decoration: none;
 }
 
-.redes h3{
-    padding:0 0 30px 0;
-}
 
 
 
@@ -309,11 +314,11 @@ nav{
 /* ----------------------------- Segunda seccion (sobre mi) ---------------------- */
 
 .sobre_mi{
-    background-color: var(--backgroundClaro);
+    background: var(--backgroundClaro);
 }
 
 .contenido{
-    background-color: var(--backgroundClaro);
+    background: var(--backgroundClaro);
     display: flex; 
     justify-content: space-between;
     padding: 180px 0px;
@@ -357,7 +362,6 @@ nav{
     
 
 
-
 /* Efectos generales */
 .columna1{ 
     display: flex;
@@ -394,9 +398,11 @@ nav{
     letter-spacing: 1px;
     text-align: start;
 }
+
 .presentacion h3{
-    margin-top: 4px;
+    margin-top: 3px;
 }
+
 .presentacion .logo{
     width: 20px;
     height: 20px;
@@ -404,13 +410,13 @@ nav{
 }
 
 
-
 .columna1 .img1{
     width: 290px;
     height: 600px;
-    background-image: url(../img/imgperfil.png);
+    background: url(../img/diseño1.jpg) no-repeat center center/cover;
     transition: .5s;
 }
+
 
 .img1:hover{
     width: 310px;
@@ -421,7 +427,7 @@ nav{
 .columna1 .img2{
     width: 290px;
     height: 350px;
-    background-image: url(../img/imgperfil.png);
+    background: url(../img/diseño2.jpg) no-repeat center center/cover;
     transition: .5s;
 }
 
@@ -433,7 +439,7 @@ nav{
 .columna1 .img3{
     width: 290px;
     height: 200px;
-    background-image: url(../img/imgperfil.png);
+    background: url(../img/diseño3.png) no-repeat center center/cover;
     transition: .5s;
 }
 
@@ -449,7 +455,7 @@ nav{
 .columna2 .img4{
     width: 290px;
     height: 400px;
-    background-image: url(../img/imgperfil.png);
+    background: url(../img/diseño4.jpg) no-repeat center center/cover;
     transition: .5s;
 }
 
@@ -463,7 +469,7 @@ nav{
 .columna2 .img5{
     width: 290px;
     height: 500px;
-    background-image: url(../img/imgperfil.png);
+    background: url(../img/diseño5.jpg) no-repeat center center/cover;
     transition: .5s;
 }
 
@@ -477,7 +483,7 @@ nav{
 .columna2 .img6{
     width: 290px;
     height: 300px;
-    background-image: url(../img/imgperfil.png);
+    background: url(../img/diseño6.png) no-repeat center center/cover;
     transition: .5s;
 }
 
@@ -530,6 +536,7 @@ nav{
 /* este div contiene las reseñas de las personas junto con su nombre  */
 .personas{ 
     display: flex;
+    height: 900px;
     margin:var(--margen);
 }
 
@@ -557,23 +564,23 @@ nav{
 
 .personas .p1{
     width: 200px;
-    padding-bottom: 90px;
+    
 }
 
 
 
 .personas .reseña2{
     border-radius: 10px;
-    background-color: rgb(24,24,24);
+    background-color:rgb(58,58,58);
     text-align: center;
     align-items: center;
     width: 350px;
-    height: 400px;
+    height: 300px;   
 }
 
 .personas .p2{
     width: 200px;
-    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .p2 p{
@@ -593,38 +600,61 @@ nav{
 
 .personas .p3{
     width: 200px;
-    padding-bottom: 90px;
+    padding-bottom: 20px;
 }
 
 
 /* Puntos para simular el carrousel */
-.puntos{
-    margin:  0px 140px;
-    width: 1127px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
 
-.puntos .pr1{
+.pr1{
+    margin-bottom: 200px;
+    margin-top: 100px;
     width: 20px;
     height: 20px;
     filter: grayscale(100%) brightness(30%);
+    
 }
 
-.puntos .pr2{
+
+.r1:active{
+    .pr1{filter: grayscale(100%) brightness(200%) contrast(200%);
     width: 23px;
-    height: 23px;
-    filter: grayscale(100%) brightness(200%) contrast(200%);
-    padding: 0px 30px
+    height: 23px;}
+    .reseña1{
+        border-radius: 10px;
+        background-color: rgb(24,24,24);
+        width: 350px;
+        height: 400px;
+    }
 }
 
+.r2:active{
+    .pr1{filter: grayscale(100%) brightness(200%) contrast(200%);
+    width: 23px;
+    height: 23px;}
+    .reseña2{
+        border-radius: 10px;
+        background-color: rgb(24,24,24);
+        text-align: center;
+        align-items: center;
+        width: 350px;
+        height: 400px;
+    }
+}
 
-
-
-
+.r3:active{
+    .pr1{filter: grayscale(100%) brightness(200%) contrast(200%);
+    width: 23px;
+    height: 23px;}
+    .reseña3{
+        border-radius: 10px;
+        background-color: rgb(24,24,24);
+        text-align: center;
+        align-items: center;
+        width: 350px;
+        height: 400px;
+    }
+}
 
 /* ---------------------------- Sexta seccion (mis servicios) --------------------------  */
 .servicios{
