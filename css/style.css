@@ -224,7 +224,7 @@ nav{
 
 .inicio{
      display: flex; 
-     padding: 190px 0px 227px 0px;
+     padding: 190px 0px 155px 0px;
      margin: var(--margen);
      
 }
@@ -243,9 +243,6 @@ nav{
   justify-content: center;
 }
 
-.titulo h1{
-    padding: 30px 0px 55px 0px;
-}
 
 .titulo h2{
     font-size: 55px;
@@ -271,7 +268,7 @@ nav{
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    padding: 45px 0 110px 0;
+    padding-bottom: 110px;
     margin: var(--margen);
 }
 
@@ -341,7 +338,7 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 0px 208px ;
-    padding: 250px 0 400px 0;
+    padding: 200px 0;
 }
 .trabajos .titulo{
     width: 700px;
@@ -711,7 +708,6 @@ nav{
 }
 
 .subtitulos h1{
-    padding-bottom: 30px;
     font-style: bold;
     font-size: var(--tamañoSubtitulo);
 }
@@ -724,7 +720,7 @@ nav{
 /* ----------------------------Septima seccion---------------------------------- */
 
 .pie_main{
-    background-image: url(../img/pie_main.png);
+    background: url(../img/pie_main.png) no-repeat center center/cover;
     padding: 50px 0px;
 }
 
@@ -744,7 +740,6 @@ nav{
 
 .pie_main h1{
     font-size: 55px;
-    padding: 10px 0px;
 }
 
 .pie_main .logo{
@@ -793,7 +788,6 @@ footer{
 
 
 .contacto h1{
-    padding: 30px 0;
     font-size: 50px;
     font-weight: lighter;
 }
@@ -801,7 +795,6 @@ footer{
 .contacto p{
     font-size: var(--descripcion);
     font-weight: bold;
-    padding: 10px 0;
 }
 
 .contacto img{
