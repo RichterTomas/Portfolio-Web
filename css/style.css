@@ -186,6 +186,9 @@ nav{
     height: 30px;
 }
 
+nav img{
+    display: none;
+}
 .navs{
     color: white;
     text-decoration: none;
@@ -560,6 +563,10 @@ nav{
 
 .personas .p1{
     width: 200px;
+    p{
+        width: 100%;
+        text-align: center;
+    }
     
 }
 
@@ -577,13 +584,13 @@ nav{
 .personas .p2{
     width: 200px;
     padding-bottom: 20px;
+    p{
+        width: 300px;
+        text-align: center;  
+    }
 }
 
-.p2 p{
-    width: 300px;
-    text-align: center;
-    
-}
+
 
 .personas .reseña3{
     border-radius: 10px;

@@ -1,18 +1,193 @@
 /* moviles pequeños */
-/* @media (max-width: 320px){}
-@media (max-width: 480px){} */
+@media (max-width: 320px){}
+@media (max-width: 480px){}
 
 /* tablets y modo retrato */
-/* @media (max-width: 768px){} */
+@media (max-width: 768px){}
 
 /* tablets, modo retrato y moviles mas grandes */
-/* @media (max-width: 1024px){} */
+@media (max-width: 1024px){}
 
 /* modo paisaje */
-/* @media (max-width: 1280px){} */
+@media (max-width: 1280px){
+    /* NAVEGADOR */
+    nav{
+        .navs{
+            display: none;
+        }
+        img{
+            display: block;
+        }
+    }
+    /* MI TRABAJO */
+    .img1:hover{
+        width: 295px;
+        height: 620px;
+    }
+
+    .img2:hover{
+        width: 295px;
+        height: 370px;
+
+    }
+
+    .img3:hover{
+        width: 295px;
+        height: 220px;
+
+    }
+
+    .img4:hover{
+        width: 295px;
+        height: 400px;
+
+    }
+
+    .img5:hover{
+        width: 295px;
+        height: 520px;
+
+    }
+
+    .img6:hover{
+        width: 295px;
+        height: 320px;
+
+    }
+
+    /* MIS SERVICIOS */
+    .sv1,.sv2, .sv3{
+        p{
+            font-size: 18px;
+            width: 100%;
+        }
+        h1{
+            font-size: 30px;
+        }
+    }
+
+    /* PIE DEL MAIN*/
+    .pie_main{
+        p{
+            font-size: 25px ;
+        }
+
+        h1{
+            font-size: 45px ;
+        }
+    }
+    
+    /* FOOTER */
+    .contenido_footer .descripcion{
+        p{
+            font-size: 13px;
+        }
+    }
+}
 
 /* computadoras o tablets */
-/* @media (max-width: 1440px){} */
+@media (max-width: 1440px){
+    .inicio{
+        justify-content: space-between;
+    }
+    .titulo{
+        width: 50%;
+        p{
+            width: 100%;
+        }
+        h1,h2{
+            font-size: 40px
+        }
+    }
+
+    /* MI TRABAJO */
+    .columna1{
+        padding-right: 15px;
+    }
+
+
+    /* CARRUSEL DE RESEÑAS */
+    .reseñas{
+        padding: 0px;
+    }
+    .prop_reseñas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prop_reseñas .titulo {
+        align-items: center;
+        width: 50%;
+        text-align: center;
+        img{display: none;
+        }
+        
+    }
+
+    .personas{
+        width: 100%;
+
+        .reseña1{
+            width: 80%;
+            height: 80%;
+            padding-bottom: 30px;
+        }
+
+        .reseña1:active{
+            width: 90%;
+            height: 90%;
+        }
+
+        .p1{
+            padding-top: 100px;
+        }
+
+        .pr1{
+            margin: 50%;
+        }
+        
+        .reseña2{
+            width: 80%;
+            height: 80%;
+        }
+
+        .reseña2:active{
+            width: 90%;
+            height: 90%;
+        }
+
+        .p2{
+            padding-top: 100px;
+        }
+
+        .pr1{
+            margin: 50%;
+        }
+
+        .reseña3{
+            width: 80%;
+            height: 80%;
+        }
+
+        .reseña3:active{
+            width: 90%;
+            height: 90%;
+        }
+
+        .p3{
+            padding-top: 100px;
+        }
+
+        .pr1{
+            margin: 50%;
+        }
+    }
+
+    .servicios .titulo{
+       width: 100%;
+       padding-bottom: 100px;
+    }
+}
 
 /* resoluciones 2k, 4k u 8k */
-/* @media (max-width: 1920px){} */
+@media (max-width: 1920px){}
