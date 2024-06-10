@@ -3,7 +3,119 @@
 @media (max-width: 480px){}
 
 /* tablets y modo retrato */
-@media (max-width: 768px){}
+@media (max-width: 768px){
+    /* SOBRE MI */
+
+    /* MIS TRABAJOS */
+    .trabajos .titulo{
+        padding: 0px;
+        img{
+            display: none;
+        }
+        align-items: center;
+        justify-content: center;
+    }
+
+    .presentacion{
+        width: 100%;
+    }
+
+    .presentacion .columna1{
+        width: 50%;
+        .img1, .img2, .img3{
+            width: 100%;
+            height: 32%;
+        }
+    }
+
+    .presentacion .columna2{
+        width: 50%;
+        .img4, .img5, .img6{
+            width: 100%;
+            height: 32%;
+        }
+    }
+
+    /* CARRUSEL */
+    .reseñas .titulo{
+        width: 50%;
+        height: 50%;
+        margin-top: 30%;
+        padding-bottom: 20%;
+
+    }
+
+    .personas{
+        height: 50%;
+        margin-bottom: 100px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .personas .r1, .personas .r2, .personas .r3{
+        width: 30%;
+    }
+
+    .reseña1, .reseña2, .reseña3{
+        p{font-size: 10px;
+        }
+    }
+
+    .p1, .p2, .p3{
+        width: 100%;
+        margin-bottom: 100px;
+        text-align: center;
+        text-align: center;
+        img{
+            display: none;
+        }
+        h2{
+            font-size: 20px;
+            padding-bottom: 20px;
+            font-weight: bold;
+        }
+
+        p{ 
+            font-size: 5px;
+            padding: 0;
+        }
+    }
+
+    /* MIS SERVICIOS */
+
+    .sv1, .sv2, .sv3{
+        align-items: center;
+    }
+
+
+    /* Footer */
+    .contenido_footer .descripcion{
+        p{
+            font-size: 5px;
+        }
+    }
+
+    .contenido_footer .contacto{
+        h1{
+            font-size: 30px;
+            padding-top: 60px;
+        }
+        p{
+            font-size: 15px;
+        }
+        div{
+            padding-top: 20px;
+            padding-left: 20px;
+            display: flex;
+            align-items: center;
+            img{
+                display: block;
+                width: 30%;
+                height: 30%;
+            }
+        }   
+    }
+}
 
 /* tablets, modo retrato y moviles mas grandes */
 @media (max-width: 1024px){
