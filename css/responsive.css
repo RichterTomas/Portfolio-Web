@@ -1,6 +1,262 @@
 /* moviles pequeños */
 @media (max-width: 320px){}
-@media (max-width: 480px){}
+@media (max-width: 480px){
+    /* HEADER */
+    header{
+        margin:0;
+        width: 100%;
+    }
+    header div{
+        margin:0;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+
+    /* INICIO */
+
+    .inicio{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .titulo{
+        width: 100%;
+        align-items: center;
+    }
+
+    .boton_der{
+        width: 100%;
+        a{
+            font-size: 20px;
+        }
+    }
+
+    .boton{
+        width: 100%;
+        a{
+            font-size: 20px;
+        }
+    }
+
+    .redes{
+        margin: 0;
+        width: 100%;
+        align-items: center;
+        a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+            
+            width: 100px;
+        }
+        
+    }
+
+    .redes p{
+        display: none;
+    }
+
+    .datos{
+        width: 100%;
+        
+    }
+    .datos div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .datos h3{
+        text-align: center;
+    }
+
+
+    /* SOBRE MI */
+    .sobre_mi{
+        margin: 0;
+        width: 100%;
+    }
+    .contenido{
+        margin: 0; 
+    }
+
+    .contenido .titulo{
+        text-align: center;
+        align-items: center;
+    }
+
+    .titulo .boton{
+        background:linear-gradient(to left,  var(--colorBoton), transparent 75%);
+        background-size: 200% 100%;
+        background-position: 150% 50%;
+    }
+
+    .titulo .boton:hover{
+        background-position: 100% 200%;
+        cursor: pointer;
+    }
+
+    /* MI TRABAJO */
+    .trabajos{
+        width: 100%;
+        align-items: center;
+        margin: 0;
+    }
+
+    .trabajos .titulo{
+        width: 100%;
+    }
+
+    .trabajos .trabajos_responsive{
+        align-content: flex-end;
+        display: block;
+        width: 290px;
+        height: 600px;
+        background: url(../img/diseño1.jpg) no-repeat center center/cover;
+        transition: .5s;
+    }
+    .trabajos_responsive p,h3{
+        margin-left: 5px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-align: start;
+    }
+
+    .trabajos_responsive .logo{
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    .flecha_responsive{
+        display: block;
+        margin-top: 20px;
+        background-color: rgb(167,115,74);
+        padding: 0px 30px;
+    }
+    .presentacion{
+        display: none;
+    }
+
+
+    /* CARRUSEL */
+    .prop_reseñas .titulo{
+        padding-top: 30%;
+    }
+    .personas{
+        display: none;
+    }
+    .carrusel_responsive{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .carrusel_responsive .reseña1{
+        border-radius: 10px;
+        background-color: rgb(58,58,58);
+        text-align: center;
+        align-items: center;
+        width: 350px;
+        height: 300px;
+        margin-bottom: 10%;
+    }
+
+    .carrusel_responsive .flecha_responsive{
+        margin-bottom: 30%;
+    }
+
+    /* MIS SERVICIOS */
+    .servicios{
+        margin: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .servicios .titulo{
+        width: 100%;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .sv1, .sv2, .sv3{
+        width: 100%;
+        font-size: 15px;   
+        p{
+            display: none;
+        }
+        .subtitulos{
+            width: 100%;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    /* PIE MAIN */
+    .pie_main{
+        width: 98%;
+    }
+
+    .pie_main div{
+        width: 100%;
+        margin: 0;
+    }
+    /* FOOTER */
+    .barra_responsive{
+        display: block;
+        margin-top: 30px;
+        background-color: white;
+        height: 5px;
+        width: 30%;
+        
+    }
+
+    .contenido_footer{
+       margin: 0;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+    }
+
+    .contenido_footer .descripcion{
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenido_footer .barra{
+        display: none;
+    }
+
+    .contenido_footer .contacto{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        p{font-size: 10px ;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        a{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    
+
+
+}
 
 /* tablets y modo retrato */
 @media (max-width: 768px){
