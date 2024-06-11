@@ -1,18 +1,52 @@
 /* moviles pequeños */
 @media (max-width: 320px){
+    /* BOTONES */
+   /* REDES */
+   .redes .datos{
+        align-items: center;
+        h3{
+            font-size: 15px;
+        }
+       
+   }
+    .prop_reseñas{
+        margin: 0;
+        width: 100%;
+    }
+    .carrusel_responsive{
+        margin: 0;
+        width: 100%;
+    }
+    
+    .carrusel_responsive .p1{
+        /* border: solid red 3px; */
+        width: 100%;
+
+    }
+
+    /* PIE MAIN */
+    .pie_main .titulo{
+        font-size: 30px;
+        p{
+            font-size: 10px;
+        }
+    }
 }
-
-
 @media (max-width: 480px){
+    /* BOTON */
+
     /* HEADER */
     header{
         margin:0;
         width: 100%;
+        .logo{
+            display: none;
+        }
     }
     header div{
         margin:0;
-        width: 100%;
-        justify-content: space-evenly;
+        width: 93%;
+        justify-content: center;
     }
 
 
@@ -24,9 +58,8 @@
         text-align: center;
     }
 
-    .titulo{
+    .titulo {
         width: 100%;
-        align-items: center;
     }
 
     .boton_der{
@@ -109,10 +142,12 @@
         width: 100%;
         align-items: center;
         margin: 0;
+        padding:0 0 100px;
     }
 
     .trabajos .titulo{
         width: 100%;
+        height: 500px;
     }
 
     .trabajos .trabajos_responsive{
@@ -148,27 +183,33 @@
 
     /* CARRUSEL */
     .prop_reseñas .titulo{
-        padding-top: 30%;
+        padding-top: 10%;
     }
+
+    .prop_reseñas{
+        width: 100%;
+        margin: 0;
+    }
+
+
     .personas{
         display: none;
     }
-    .carrusel_responsive{
+    .carrusel_responsive{   
         display: block;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: solid red 3px;
+        width: 60%;
     }
     
 
     .carrusel_responsive .reseña1{
-        border: solid red 3px;
         border-radius: 10px;
         background-color: rgb(58,58,58);
         text-align: center;
         align-items: center;
-        width: 350px;
+        width: 100%;
         height: 300px;
         margin-bottom: 10%;
     }
@@ -190,6 +231,9 @@
         width: 100%;
         justify-content: space-evenly;
         text-align: center;
+        .logo{
+            display: none;
+        }
     }
 
     .sv1, .sv2, .sv3{
@@ -207,7 +251,7 @@
 
     /* PIE MAIN */
     .pie_main{
-        width: 98%;
+        width: 100%;
     }
 
     .pie_main div{
@@ -258,6 +302,8 @@
             height: 40px;
         }
     }
+
+
     
 
 
@@ -298,50 +344,56 @@
     }
 
     /* CARRUSEL */
-    .reseñas .titulo{
-        width: 50%;
-        height: 50%;
-        margin-top: 30%;
-        padding-bottom: 20%;
-
+    .prop_reseñas{
+        border: solid red 3px;
+        height: 1000px;
     }
+    .prop_reseñas .titulo{
+        padding-top: 10%;
+        height: 200px;
+    }
+
+    .prop_reseñas{
+        width: 100%;
+        margin: 0;
+    }
+
 
     .personas{
+        display: none;
+    }
+
+    .carrusel_responsive{  
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        height: 100%;
+    }
+    
+
+    .carrusel_responsive .reseña1{
+        border-radius: 10px;
+        background-color: rgb(58,58,58);
+        width: 90%;
         height: 50%;
-        margin-bottom: 100px;
-        justify-content: center;
-        align-content: center;
+        margin-bottom: 10%;
     }
 
-    .personas .r1, .personas .r2, .personas .r3{
-        width: 30%;
+    .carrusel_responsive .p1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
     }
 
-    .reseña1, .reseña2, .reseña3{
-        p{font-size: 10px;
-        }
+    .carrusel_responsive .flecha_responsive{
+        margin-top: 10%;
+        padding: 0px 30px;
+        background-color: rgb(167,115,74);
+        display: block;
     }
-
-    .p1, .p2, .p3{
-        width: 100%;
-        margin-bottom: 100px;
-        text-align: center;
-        text-align: center;
-        img{
-            display: none;
-        }
-        h2{
-            font-size: 20px;
-            padding-bottom: 20px;
-            font-weight: bold;
-        }
-
-        p{ 
-            font-size: 5px;
-            padding: 0;
-        }
-    }
-
     /* MIS SERVICIOS */
 
     .sv1, .sv2, .sv3{
@@ -350,19 +402,56 @@
 
 
     /* Footer */
+    .pie_main{
+        width: 100%;
+    }
+
+    .pie_main div{
+        width: 100%;
+        margin: 0;
+    }
+    /* FOOTER */
+    .barra_responsive{
+        display: block;
+        margin-top: 30px;
+        background-color: white;
+        height: 5px;
+        width: 30%;
+        
+    }
+
+    .contenido_footer{
+       margin: 0;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 100%;
+    }
+
     .contenido_footer .descripcion{
-        p{
-            font-size: 5px;
-        }
+        width: 90%;
+        text-align: center;
+    }
+
+    .contenido_footer .barra{
+        display: none;
     }
 
     .contenido_footer .contacto{
-        h1{
-            font-size: 30px;
-            padding-top: 60px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        p{font-size: 15px ;
+            padding: 0;
+            margin-top: 10px;
         }
-        p{
-            font-size: 15px;
+
+        a{
+            width: 70px;
+            height: 70px;
         }
         div{
             padding-top: 20px;
@@ -374,8 +463,9 @@
                 width: 30%;
                 height: 30%;
             }
-        }   
+        }
     }
+
 }
 
 /* tablets, modo retrato y moviles mas grandes */
