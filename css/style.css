@@ -154,7 +154,7 @@ body{
 
 /* ------------------------- Estructura del header ------------------------------ */
 header{
-    padding-top: 10px;
+    padding-top: 30px;
     background: var(--backgroundGral);
     position: fixed;
     width: 100%;
@@ -198,7 +198,7 @@ nav img{
     height: 10px; 
     background: transparent; 
     border-radius: 50%; 
-    bottom: -15px; 
+    bottom: -18px; 
     left: 50%; 
     transform: translateX(-50%); 
     transition: width 0.2s, height 0.2s, background-color 0.2s; 
@@ -209,11 +209,15 @@ nav img{
     height: 10px; 
     background: white; 
     border: 1px solid white; 
+    
 }
 
-.navs p:hover{
-    font-weight: bolder;
+.navs:hover{
+    p{
+        font-weight: bolder;
+    }
 }
+
 
 
 
@@ -542,6 +546,9 @@ nav img{
 .personas .reseña1{
     border-radius: 10px;
     background-color: rgb(58,58,58);
+    p{
+        width: 80%;
+    }
     text-align: center;
     align-items: center;
     width: 350px;
@@ -559,6 +566,8 @@ nav img{
 
 
 .personas .reseña2{
+    p{width: 80%;
+    }
     border-radius: 10px;
     background-color:rgb(58,58,58);
     text-align: center;
@@ -572,12 +581,16 @@ nav img{
     p{
         width: 100%;
         text-align: center;  
+        
     }
 }
 
 
 
 .personas .reseña3{
+    p{
+        width: 80%;
+    }
     border-radius: 10px;
     background-color:rgb(58,58,58);
     text-align: center;
