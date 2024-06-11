@@ -66,13 +66,6 @@ h2{
 
 
 /* Efectos botones */
-.red{
-    transition: 0.2s;
-}
-.red:hover{
-    font-weight: bold;
-    text-decoration: underline;
-}
 
 .boton_der{ 
     /* boton con efecto hacia derecha */
@@ -274,10 +267,6 @@ nav img{
     margin: var(--margen);
 }
 
-.redes h3{
-    margin: 0px 0px 0px -3px;
-    padding:0 0 30px 0;
-}
 
 
 .datos{
@@ -292,14 +281,13 @@ nav img{
 
 .barra{
     display: flex;
+    
 }
 
-.barra p{
-    padding: 0 30px 0 30px;
-}
 
 .barra a{
     color: white;
+    padding: 0px 5px 0px 0px;
     text-decoration: none;
 }
 
@@ -355,7 +343,7 @@ nav img{
     height: 1250px;
     display: flex;
     justify-content: space-between;
-    padding-right: 30px;
+    /* padding-right: 30px; */
 }
     
 
@@ -599,7 +587,7 @@ nav img{
 }
 
 .personas .p3{
-    width: 100%;
+    width: 200px;
 }
 
 
@@ -810,7 +798,7 @@ footer{
 
 
 footer .barra{
-    font-size: 210px;
-    font-family: 'Helvetica neue',Arial, Helvetica, sans-serif;
-    font-weight: lighter;
+    background-color: rgb(255, 255, 255);
+    width: 3px;
+    
 }

@@ -1,6 +1,6 @@
 /* moviles pequeños */
 @media (max-width: 320px){
-    /* BOTONES */
+    
    /* REDES */
    .redes .datos{
         align-items: center;
@@ -19,7 +19,6 @@
     }
     
     .carrusel_responsive .p1{
-        /* border: solid red 3px; */
         width: 100%;
 
     }
@@ -53,13 +52,15 @@
     /* INICIO */
 
     .inicio{
+        
         width: 100%;
         margin: 0;
-        text-align: center;
     }
 
     .titulo {
+        margin:0;
         width: 100%;
+        text-align: center;
     }
 
     .boton_der{
@@ -328,7 +329,7 @@
     }
 
     .presentacion .columna1{
-        width: 50%;
+        width: 45%;
         .img1, .img2, .img3{
             width: 100%;
             height: 32%;
@@ -336,7 +337,7 @@
     }
 
     .presentacion .columna2{
-        width: 50%;
+        width: 45%;
         .img4, .img5, .img6{
             width: 100%;
             height: 32%;
@@ -345,7 +346,6 @@
 
     /* CARRUSEL */
     .prop_reseñas{
-        border: solid red 3px;
         height: 1000px;
     }
     .prop_reseñas .titulo{
@@ -359,7 +359,7 @@
     }
 
 
-    .personas{
+    .reseñas .personas{
         display: none;
     }
 
@@ -470,10 +470,7 @@
 
 /* tablets, modo retrato y moviles mas grandes */
 @media (max-width: 1024px){
-    *{
-        margin: 0px;
-        
-    }
+   
 
     header{
         width: 100vw;
@@ -499,10 +496,14 @@
             width: 30%;
         }
     }
-
-    .reseñas, .personas{
+    .personas .r3{
+        display: none;
+    }
+    .p3{
+        height: 600px;
     }
 
+    
     .contenido{
         img{
             display: none;
@@ -607,7 +608,16 @@
             font-size: 13px;
         }
     }
+    .contacto h1{
+        font-size: 30px;
+    }
+    .contacto p{
+        font-size: 15px;
+        padding-bottom: 10px
+        padding-left: 5px;
+    }
 }
+
 
 /* computadoras o tablets */
 @media (max-width: 1440px){
@@ -616,6 +626,15 @@
     }
     body,html{
         width: 100vw;
+    }
+
+    header{
+        width: 100vw;
+        top:0;
+    }
+    .perfil{
+        width: 350px;
+        height: 500px;
     }
     .inicio{
         justify-content: space-between;
@@ -631,94 +650,111 @@
         }
     }
 
+    /* SOBRE MI */
+    .contenido .titulo{
+        p{
+            width: 80%;
+        }
+    }
     /* MI TRABAJO */
+    .presentacion{
+        width: 100%;
+    }
     .columna1{
-        padding-right: 15px;
+        width: 50%;
+        
+    }
+    .columna2{
+        width: 50%;
+        
     }
 
 
     /* CARRUSEL DE RESEÑAS */
     .reseñas{
+        display: flex;
+        justify-content: center;
         padding: 0px;
+        margin: 0;
     }
     .prop_reseñas{
         flex-direction: column;
         align-items: center;
+        margin: 0;
+        width: 80%;
     }
 
     .prop_reseñas .titulo {
+        justify-content: center;
         align-items: center;
         width: 50%;
-        text-align: center;
         img{display: none;
         }
-        
     }
 
+    .r1,.r2,.r3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width: 30%;
+        margin: 0;
+    }
     .personas{
         width: 100%;
+        display: flex;
+    }
 
-        .reseña1{
+    .reseña1{
             width: 80%;
             height: 80%;
-            padding-bottom: 30px;
-        }
+    }
 
-        .reseña1:active{
+    .reseña1:active{
             width: 90%;
             height: 90%;
-        }
+    }
 
-        .p1{
-            padding-top: 100px;
-        }
 
-        .pr1{
+    .pr1{
             margin: 50%;
-        }
+    }
         
-        .reseña2{
-            width: 80%;
-            height: 80%;
-        }
 
-        .reseña2:active{
+    .reseña2{
+        width:80%;
+        height: 80%;
+    }
+
+    .reseña2:active{
             width: 90%;
             height: 90%;
-        }
+    }
 
-        .p2{
-            padding-top: 100px;
-        }
-
-        .pr1{
-            margin: 50%;
-        }
-
-        .reseña3{
+   
+    .reseña3{
             width: 80%;
             height: 80%;
-        }
+    }
 
-        .reseña3:active{
+    .reseña3:active{
             width: 90%;
             height: 90%;
-        }
+    }
+ 
 
-        .p3{
-            padding-top: 100px;
-        }
-
-        .pr1{
-            margin: 50%;
-        }
+    .servicios .titulo{
+       width: 100%;
+       padding-bottom: 100px;
     }
 
     .servicios .titulo{
        width: 100%;
        padding-bottom: 100px;
     }
+
+    .p1,.p2,.p3{
+        padding-bottom: 30%;
+    }
 }
 
-/* resoluciones 2k, 4k u 8k */
-@media (max-width: 1920px){}
