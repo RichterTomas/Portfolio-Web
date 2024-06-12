@@ -20,3 +20,7 @@ Como parte de este proyecto, quiero hacer algunas aclaraciones importantes, prin
 
 PORTFOLIO ORIGINAL: 
 https://www.behance.net/gallery/189947559/Personal-Portfolio-Landing-Page-UI-Design-Website?tracking_source=search_projects|Personal+Portfolio+Landing+Page&l=72&
+
+E-MAIL:
+tomaspappalardo94@gmail.com
+
