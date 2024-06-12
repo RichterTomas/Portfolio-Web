@@ -13,13 +13,25 @@
         margin: 0;
         width: 100%;
     }
+    .prop_reseñas .titulo{
+        text-align: center;
+    }
+
     .carrusel_responsive{
         margin: 0;
         width: 100%;
     }
-    
+
+    .carrusel_responsive .reseña1{
+        p{
+            font-size: 15px;
+            height: 100%;
+        }
+    } 
     .carrusel_responsive .p1{
         width: 100%;
+        
+        text-align: center;
 
     }
 
@@ -81,15 +93,13 @@
         margin: 0;
         width: 100%;
         align-items: center;
-        a{
-            display: block;
-            text-decoration: none;
-            color: white;
-            font-size: 10px;
-            
-            width: 100px;
-        }
-        
+    }
+
+    .redes  a{
+        display: block;
+        text-decoration: none;
+        color: white;
+        width: 100%;
     }
 
     .redes p{
@@ -143,7 +153,6 @@
         width: 100%;
         align-items: center;
         margin: 0;
-        padding:0 0 100px;
     }
 
     .trabajos .titulo{
@@ -153,6 +162,7 @@
 
     .trabajos .trabajos_responsive{
         align-content: flex-end;
+        margin-top: 30%;
         display: block;
         width: 290px;
         height: 600px;
@@ -215,6 +225,9 @@
         margin-bottom: 10%;
     }
 
+    .carrusel_responsive .reseña1 p{
+
+    }
     .carrusel_responsive .flecha_responsive{
         margin-bottom: 30%;
     }
@@ -379,6 +392,7 @@
         width: 90%;
         height: 50%;
         margin-bottom: 10%;
+        text-align: center;
     }
 
     .carrusel_responsive .p1{
@@ -429,7 +443,7 @@
     }
 
     .contenido_footer .descripcion{
-        width: 90%;
+        width: 60%;
         text-align: center;
     }
 
@@ -475,10 +489,8 @@
     header{
         width: 100vw;
     }
-    .inicio{
-        img{
-            display: none;
-        }
+    .inicio .perfil{
+           display: none;
     }
     .redes{
         img{display: none;
@@ -496,6 +508,7 @@
             width: 30%;
         }
     }
+
     .personas .r3{
         display: none;
     }
@@ -510,11 +523,34 @@
         }
     }
 
-    .trabajos{
-        flex-direction: column;
+    .trabajos .titulo{
+        padding: 0px;
+        img{
+            display: none;
+        }
         align-items: center;
+        justify-content: center;
     }
 
+    .presentacion{
+        width: 100%;
+    }
+
+    .presentacion .columna1{
+        width: 45%;
+        .img1, .img2, .img3{
+            width: 100%;
+            height: 32%;
+        }
+    }
+
+    .presentacion .columna2{
+        width: 45%;
+        .img4, .img5, .img6{
+            width: 100%;
+            height: 32%;
+        }
+    }
     .sv1, .sv2, .sv3{
         flex-direction: column;
         img{display: none;}
@@ -544,7 +580,39 @@
             display: block;
         }
     }
+    .redes h3{
+            width: 30%;
+        
+    }
+
+    .redes .logo{
+       display: none;
+
+    }
+    /* SOBRE MI */
+    .sobre_mi .titulo p{
+        font-size: 18px;
+    }
     /* MI TRABAJO */
+
+    .trabajos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .trabajos .titulo{
+        height: 30%;
+    }
+    .trabajos .presentacion{
+        margin-top: 10%;
+        width: 80%;
+    }
+    .columna1{
+        align-items: center;
+    }
+    .columna2{
+        align-items: center;
+    }
     .img1:hover{
         width: 295px;
         height: 620px;
@@ -580,7 +648,18 @@
 
     }
 
+    /* carrusel */
+    .r1,.r2,.r3{
+        width: 30%;
+    }
+    .r1 .reseña1, .r2 .reseña2,.r3 .reseña3{
+        width: 90%;
+        p{
+            font-size: 18px;
+        }
+    }
     /* MIS SERVICIOS */
+
     .sv1,.sv2, .sv3{
         p{
             font-size: 18px;
@@ -603,18 +682,14 @@
     }
     
     /* FOOTER */
-    .contenido_footer .descripcion{
-        p{
-            font-size: 13px;
-        }
-    }
     .contacto h1{
+        padding-top: 36%;
         font-size: 30px;
     }
     .contacto p{
         font-size: 15px;
-        padding-bottom: 10px
-        padding-left: 5px;
+        padding-bottom: 10px;
+        padding-left: 8px;
     }
 }
 
@@ -758,3 +833,6 @@
     }
 }
 
+@media (max-width: 1920){
+    
+}

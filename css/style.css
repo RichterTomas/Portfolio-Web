@@ -244,6 +244,7 @@ nav img{
 
 
 .titulo h2{
+    margin-bottom: -15px;
     font-size: 55px;
 }
 
@@ -726,6 +727,7 @@ nav img{
 .pie_main{
     background: url(../img/pie_main.png) no-repeat center center/cover;
     padding: 50px 0px;
+    border-top: rgb(29, 28, 28) solid 3px;
 }
 
 .pie_main div{
